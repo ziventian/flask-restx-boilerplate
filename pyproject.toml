@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "flask-restx-boilerplate"
+version = "0.1.0"
+description = ""
+authors = ["Ziven Tian <ziventian@163.com>"]
+readme = "README.md"
+packages = [{include = "flask_restx_boilerplate"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask-sqlalchemy = {version = "^3.1.1", source = "tsinghua"}
+flask-restx = {version = "^1.3.0", source = "tsinghua"}
+flask-migrate = {version = "^4.0.7", source = "tsinghua"}
+flask-bcrypt = {version = "^1.0.1", source = "tsinghua"}
+flask-cors = {version = "^5.0.0", source = "tsinghua"}
+flask-jwt-extended = {version = "^4.6.0", source = "tsinghua"}
+flask-marshmallow = {version = "^1.2.1", source = "tsinghua"}
+marshmallow-sqlalchemy = {version = "^1.1.0", source = "tsinghua"}
+python-dotenv = {version = "^1.0.1", source = "tsinghua"}
+attrs = {version = "^24.2.0", source = "tsinghua"}
+jsonschema-specifications = {version = "^2024.10.1", source = "tsinghua"}
+
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "default"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
